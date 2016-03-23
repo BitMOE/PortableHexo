@@ -4,7 +4,7 @@
 
 ###说明 / Description
 
-- 1 无需安装Nodejs和Git; / The installations of Nodejs and Git are not need;
+- 1 无需安装Nodejs和Git; / The installations of Nodejs and Git are not needed;
   
 - 2 添加了一些适合适合毫无基础的用户的脚本; / Some Shells added for computer illiterate;
 

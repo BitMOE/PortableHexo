@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+ 
+var ftpsync = require('../lib/ftpsync.js');
+var program = require('commander');
+var packInfo = require('../package.json');
+
+function list(val) {
+  return val.split(',');
+}
+
+program.version(packInfo.version);
+program.option('-v, --verbose', 'Verbose logging');
+program.option('-l, --local []', 'Local root path', '');
+program.option('-r, --remote []', 'Remote root path', '');
+program.option('-h, --host []', 'FTP host name/address', '');
+program.option('-p, --port <>', 'FTP connection port', parseInt);
+program.option('-u, --user []', 'FTP user name', '');
+program.option('-s, --pass []', 'FTP password', '');
+program.option('-c, --connections <>', 'Max number of concurrent FTP connections', parseInt);
+program.option('-i, --ignore <items>', 'List of files to ignore (separated by commas)', list);
+program.parse(process.argv);
+
+if (program.local) { ftpsync.settings.local = program.local; }
+if (program.remote) { ftpsync.settings.remote = program.remote; }
+if (program.host) { ftpsync.settings.host = program.host; }
+if (program.port) { ftpsync.settings.port = program.port; }
+if (program.user) { ftpsync.settings.user = program.user; }
+if (program.pass) { ftpsync.settings.pass = program.pass; }
+if (program.connections) { ftpsync.settings.connections = program.connections; }
+if (program.ignore) { ftpsync.settings.ignore = program.ignore; }
+if (program.verbose) { ftpsync.log.verbose = true;}
+
+ftpsync.run();

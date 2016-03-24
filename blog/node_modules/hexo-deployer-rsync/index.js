@@ -1,0 +1,1 @@
+hexo.extend.deployer.register('rsync', require('./lib/deployer'));

@@ -1,0 +1,9 @@
+{
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
+  "main": "server.js",
+  "dependencies": {
+    "superstatic": "^1.1.7"
+  }
+}

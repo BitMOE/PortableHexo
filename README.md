@@ -23,8 +23,10 @@
 - 1 双击解压即可; / Just Extract！
   
 ###下载 / Download
+  
+- [PortableHexo 1.0.0 Rleased](https://github.com/Bitmoe/PortableHexo/releases)
 
-- 32位 / 32bit  [百度盘](http://pan.baidu.com/s/1bod6xFx)
-
-- 64位 / 64bit  [百度盘](http://pan.baidu.com/s/1c0WIRrM)
+- 备用下载地址  
+    - [百度盘32bit](http://pan.baidu.com/s/1bod6xFx) 
+    - [百度盘64bit](http://pan.baidu.com/s/1c0WIRrM)
   

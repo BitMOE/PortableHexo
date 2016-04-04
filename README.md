@@ -4,9 +4,11 @@
 
 ###说明 / Description
 
-- 1 无需安装Nodejs和Git; / The installations of Nodejs and Git are not needed;
+- 1 无需安装 Nodejs 和 Git ； / The installations of Nodejs and Git are not needed;
   
-- 2 添加了一些适合适合毫无基础的用户的脚本; / Some Shells added for computer illiterate;
+- 2 添加了一些适合适合毫无基础的用户的脚本； / Some Shells added for computer illiterate;
+
+- 3 更多信息请参考 [Hexo 便携版](https://project.bitmoe.cn/PortableHexo/) 项目主页； / For more information, please refer to [PortableHexo](https://project.bitmoe.cn/PortableHexo/) Project Homepage.
 
 ###版本 / Version
 
@@ -27,6 +29,8 @@
 - [PortableHexo 1.0.0 Rleased](https://github.com/Bitmoe/PortableHexo/releases)
 
 - 备用下载地址  
-    - [百度盘32bit](http://pan.baidu.com/s/1bod6xFx) 
-    - [百度盘64bit](http://pan.baidu.com/s/1c0WIRrM)
-  
+- 
+  - [比特萌官方32bit下载](https://download.bitmoe.cn/PortableHexo/PortableHexo-32bit-7z.exe) 
+  - [比特萌官方64bit下载](https://download.bitmoe.cn/PortableHexo/PortableHexo-64bit-7z.exe)
+  - [百度盘32bit](http://pan.baidu.com/s/1bod6xFx) 
+  - [百度盘64bit](http://pan.baidu.com/s/1c0WIRrM)

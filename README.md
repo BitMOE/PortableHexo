@@ -8,6 +8,8 @@
   
 - 2 添加了一些适合适合毫无基础的用户的脚本； / Some Shells added for computer illiterate;
 
+**注意：配置Github部署 脚本在使用时，会将 用户名.github.io 仓库中的内容以Hexo生成的文件覆盖！**
+
 - 3 更多信息请参考 [Hexo 便携版](https://project.bitmoe.cn/PortableHexo/) 项目主页； / For more information, please refer to [PortableHexo](https://project.bitmoe.cn/PortableHexo/) Project Homepage.
 
 ###版本 / Version

@@ -30,7 +30,7 @@
   
 ###下载 / Download
   
-- [PortableHexo 1.0.0 Rleased](https://github.com/Bitmoe/PortableHexo/releases)
+- [PortableHexo 1.0.1 Rleased](https://github.com/Bitmoe/PortableHexo/releases)
 
 - 备用下载地址  
 - 

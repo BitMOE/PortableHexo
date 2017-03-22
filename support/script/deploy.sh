@@ -1,6 +1,6 @@
 clear
-echo "HEXO辅助配置脚本"
-echo "Powered By Bitmoe"
+echo "     Bitmoe HEXO Portable 辅助配置程序"
+echo "         Powered By Bitmoe Inc."
 echo ""
 echo "进行这一步之前，请保证："
 echo "已经注册了Github并且新建了如 用户名.github.io 的仓库；"
@@ -39,5 +39,5 @@ hexo d
 
 echo "请访问 https://$GITHUBID.github.io 查看是否部署成功！"
 echo "HEXO 的初步配置完毕，更多的配置请参考官方文档~自带中文哦！"
-echo "本脚本由 Bitmoe Inc. 编写并提供技术支持！"
+echo "本脚本由 比特萌公司（Bitmoe Inc.） 编写并提供技术支持！"
 read TEMPINPUT

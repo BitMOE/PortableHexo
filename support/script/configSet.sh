@@ -1,6 +1,6 @@
 clear
-echo "HEXO辅助配置脚本"
-echo "Powered By Bitmoe"
+echo "     Bitmoe HEXO Portable 辅助配置程序"
+echo "          Powered By Bitmoe Inc."
 echo ""
 echo "请按照以下提示输入相关信息："
 echo "主标题、副标题、描述、作者、网站地址"
@@ -24,5 +24,5 @@ sed -i '/^author:/c\author: '$blogAuthor'' _config.yml
 sed -i '/^url: /c\url: '$blogUrl'' _config.yml
 
 echo "HEXO 的初步配置完毕，更多的配置请参考官方文档~自带中文哦！"
-echo "本脚本由 Bitmoe Inc. 编写并提供技术支持！"
+echo "本脚本由 比特萌公司（Bitmoe Inc.） 编写并提供技术支持！"
 read TEMPINPUT

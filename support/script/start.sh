@@ -1,2 +1,8 @@
-echo "本脚本由 Bitmoe Inc. 编写并提供技术支持！"
+echo ""
+echo ""
+echo ""
+echo ""
+echo "     本脚本由 比特萌公司（Bitmoe Inc.） 编写并提供技术支持！"
+echo ""
+echo "              WebSite: https://www.bitmoe.com"
 bash

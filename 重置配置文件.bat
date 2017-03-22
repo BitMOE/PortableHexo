@@ -1,7 +1,7 @@
 @echo off
 cls
-cd blog
-set path=%path%;%cd%\..\support\git\bin\;%cd%\..\support\npm\bin\;%cd%\..\support\nodejs\;%cd%\..\support\npm\;%cd%\..\support\git\
+cd hexo
+set path=%path%;%cd%\..\support\git\bin\;%cd%\..\support\nodejs\;%cd%\..\hexo\node_modules\.bin;%cd%\..\support\nodejs\node_modules\.bin;%cd%\..\support\git\
 del _config.yml
 copy %cd%\..\support\backup\_config.yml _config.yml
 cls

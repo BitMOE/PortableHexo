@@ -18,11 +18,11 @@
 
 - Git:    2.7.4
   
-- Nodejs: 4.4.0
+- Nodejs: 6.10.1
   
-- Npm:    3.8.3
+- Npm:    4.4.1
   
-- Hexo:   3.2
+- Hexo:   3.2.2
 
 ###用法 / Usage
 
@@ -30,11 +30,8 @@
   
 ###下载 / Download
   
-- [PortableHexo 1.0.1 Rleased](https://github.com/Bitmoe/PortableHexo/releases)
+- [PortableHexo 1.0.3 Rleased](https://github.com/Bitmoe/PortableHexo/releases)
 
 - 备用下载地址  
 - 
-  - [比特萌官方32bit下载](https://download.bitmoe.cn/PortableHexo/PortableHexo-32bit-7z.exe) 
-  - [比特萌官方64bit下载](https://download.bitmoe.cn/PortableHexo/PortableHexo-64bit-7z.exe)
-  - [百度盘32bit](http://pan.baidu.com/s/1bod6xFx) 
-  - [百度盘64bit](http://pan.baidu.com/s/1c0WIRrM)
+  - [比特萌官方文件分享中心下载](https://download.bitmoe.cn/PortableHexo/PortableHexo-7z.exe) 

@@ -1,0 +1,1 @@
+echo                     Hexo Portable Version: v1.1.1

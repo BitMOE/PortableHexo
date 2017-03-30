@@ -1,2 +1,2 @@
 @ECHO OFF
-hexo clean && hexo g && exit
+hexo clean && hexo g

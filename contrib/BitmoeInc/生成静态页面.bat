@@ -3,13 +3,13 @@ mode con cols=77 lines=25
 title         比特萌 HEXO 便携版远程部署控制台（ Windows 平台）
 color 0a
 cls
-CALL %~dp0contrib\node-v6.10.1-win-x86\nodevars.bat
+CALL %~dp0..\node-v6.10.1-win-x86\nodevars.bat
 cls
-CALL %~dp0contrib\BitmoeInc\比特萌.bat
+CALL %~dp0比特萌.bat
 echo.
 echo             比特萌 HEXO 便携版远程部署控制台（ Windows 平台）
-CALL %~dp0contrib\BitmoeInc\版本号.bat
-cd %~dp0hexo
+CALL %~dp0版本号.bat
+cd %~dp0..\..\hexo
 echo.
 echo          接下来，本程序将为您生成 HEXO 文章为网页静态文件；
 echo.
@@ -19,21 +19,21 @@ echo                  具体时间受您的计算机配置及您文章数量影响。
 echo.
 echo.
 pause
-cmd /c %~dp0contrib\BitmoeInc\hexog.bat
+
+cmd /c %~dp0hexog.bat
 echo.
 echo        o(∩_∩)o 
 echo    静态文件生成成功
 echo.
 pause
-CALL %~dp0contrib\BitmoeInc\比特萌.bat
 cls
-CALL %~dp0contrib\node-v6.10.1-win-x86\nodevars.bat
+CALL %~dp0..\node-v6.10.1-win-x86\nodevars.bat
 cls
-CALL %~dp0contrib\BitmoeInc\比特萌.bat
+CALL %~dp0比特萌.bat
 echo.
 echo             比特萌 HEXO 便携版远程部署控制台（ Windows 平台）
-CALL %~dp0contrib\BitmoeInc\版本号.bat
-pushd %~dp0hexo
+CALL %~dp0版本号.bat
+cd %~dp0..\..\hexo
 echo.
 echo          o(∩_∩)o ，哇，您距离网站上线只剩最后一步了！！！
 echo                PS：若您为进行部署配置，请选择先行配置对应设置
@@ -54,5 +54,5 @@ if %user_input% equ 5 goto GITCONF
 if %user_input% equ 6 goto FTPCONF
 
 :RSYNC
-CALL %~dp0RSYNC传输.cmd
+CALL %~dp0RSYNC传输.bat
 pause

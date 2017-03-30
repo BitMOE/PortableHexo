@@ -3,8 +3,6 @@ mode con cols=77 lines=25
 title          比特萌 Hexo 便携版 RSYNC 同步配置控制台（ Windows 平台）
 color 0a
 cls
-CALL %~dp0..\contrib\node-v6.10.1-win-x86\nodevars.bat
-cls
 CALL %~dp0比特萌.bat
 echo.
 echo          比特萌 Hexo 便携版 RSYNC 同步配置控制台（ Windows 平台）

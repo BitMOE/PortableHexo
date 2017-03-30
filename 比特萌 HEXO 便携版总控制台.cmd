@@ -8,33 +8,56 @@ cls
 CALL %~dp0contrib\BitmoeInc\启动欢迎信息.bat
 echo        请输入对应数字，执行相应操作
 echo.
-echo       ①、基本操作手册 ； ②、配置基本信息 ； ③、服务部署配置 ；
-echo       ④、新建博客文章 ； ⑤、本地服务测试 ； ⑥、生成并且部署 ；
-echo       ⑦、重置配置文件 ； ⑧、启动指令模式 ； ⑨、关闭并且退出 ；
+echo       ①、配置基本信息 ； ②、服务部署配置 ； ③、新建博客文章 ；
+echo       ④、本地服务测试 ； ⑤、生成并且部署 ； ⑥、重置配置文件 ；
+echo       ⑦、启动指令模式 ； ⑧、关闭并且退出 ； ⑨、关于本便携版 ；
 echo.
 
 REM ①②③④⑤⑥⑦⑧⑨⑩
 set /p user_input=请输入数字：
 
-if %user_input% equ 1 goto CONF
-if %user_input% equ 2 goto SYNC
-if %user_input% equ 3 goto DEPLOY
-if %user_input% equ 4 goto CONF
-if %user_input% equ 5 goto SERVER
-if %user_input% equ 6 goto EXIT
-if %user_input% equ 7 goto RESET
-if %user_input% equ 8 goto SHELL
-if %user_input% equ 9 goto EXIT
+if %user_input% equ 1 goto SETINF
+if %user_input% equ 2 goto SETDEP
+if %user_input% equ 3 goto NEWPOS
+if %user_input% equ 4 goto LOCALP
+if %user_input% equ 5 goto DEPLOY
+if %user_input% equ 6 goto RESETH
+if %user_input% equ 7 goto SSHELL
+if %user_input% equ 8 goto EXITHP
+if %user_input% equ 9 goto ABOUTP
 
+REM 1
+:SETINF
+CALL %~dp0contrib\BitmoeInc\服务部署配置.bat
 
-:SERVER
-CALL 本地服务测试.cmd
+REM 2
+:SETDEP
+CALL %~dp0contrib\BitmoeInc\服务部署配置.bat
+
+REM 3
+:NEWPOS
+CALL %~dp0contrib\BitmoeInc\新建博客文章.bat
+
+REM 4
+:LOCALP
+CALL %~dp0contrib\BitmoeInc\本地服务测试.bat
+
+REM 5
 :DEPLOY
-CALL 服务部署配置.cmd
+CALL %~dp0contrib\BitmoeInc\生成静态页面.bat
 
-:RESET
-CALL 重置配置文件.cmd
-:SHELL
-CALL 启动指令模式.cmd
-:EXIT
+REM 6
+:RESETH
+CALL %~dp0contrib\BitmoeInc\重置配置文件.bat
+
+REM 7
+:SSHELL
+CALL %~dp0contrib\BitmoeInc\启动指令模式.bat
+
+REM 8
+:EXITHP
 exit
+
+REM 9
+:ABOUTP
+CALL %~dp0contrib\BitmoeInc\关于HEXO便携版.bat

@@ -18,7 +18,7 @@ git config --global credential.helper store
 git config --global user.name $GITHUBID
 git config --global user.email $GITHUBEMAIL
 
-githubrepo="https://$GITHUBID@github.com/$GITHUBID/$GITHUBID.github.io.git"
+githubrepo="https://github.com/$GITHUBID/$GITHUBID.github.io.git"
 
 sed -i '/^  type:/d' _config.yml
 sed -i '/^  repo:/d' _config.yml

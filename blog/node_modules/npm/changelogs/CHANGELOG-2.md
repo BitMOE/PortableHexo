@@ -2691,7 +2691,7 @@ the code that handles Git dependencies.
   `glob@4.4.2`: Handle bad symlinks properly.
   ([@isaacs](https://github.com/isaacs))
 
-###E TYPSO & CLARFIICATIONS
+### E TYPSO & CLARFIICATIONS
 
 dId yuo know that submiting fxies for doc tpyos is an exclelent way to get
 strated contriburting to a new open-saurce porject?

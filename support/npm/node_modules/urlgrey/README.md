@@ -25,9 +25,9 @@ To create a new urlgrey object, just pass a url to urlgrey like so:
 var url = urlgrey("https://user:pass@subdomain.asdf.com/path/kid?asdf=1234#frag")
 ```
 
-##API specifics:
+## API specifics:
 
-###url.child([lastPart])
+### url.child([lastPart])
 
 Setter/getter for the last part of a path:
 ```javascript
@@ -35,47 +35,47 @@ Setter/getter for the last part of a path:
   url.child("grandkid"); // returns a new uri object with the uri 
                              // https://user:pass@subdomain.asdf.com/path/kid/grandkid?asdf=1234#frag
 ```   
-###url.decode(encodedString);
+### url.decode(encodedString);
 Returns the decoded version of the input string using node's standard querystring.unescape().
 ```javascript
       url.decode('this%20is%20a%20test');  // returns "this is a test"
 ```   
     
-###url.encode(unencodedString);
+### url.encode(unencodedString);
 Returns the encoded version of the input string using node's standard querystring.escape().
 ```javascript
       url.encode('this is a test'); // returns 'this%20is%20a%20test'
 ```   
     
-###url.hash([newHash])
+### url.hash([newHash])
 Setter/getter for the url fragment/anchor/hash of a path.
 ```javascript
       url.hash(); // returns 'frag'
       url.hash("blah"); // returns a new uri object with the uri
                             // https://user:pass@subdomain.asdf.com/path/kid/?asdf=1234#blah
 ```   
-###url.hostname([newHostname])
+### url.hostname([newHostname])
 Setter/getter for the url hostname.
 ```javascript
       url.hostname(); // returns 'subdomain.asdf.com'
       url.hostname("geocities.com"); // returns a new uri object with the uri
                             // https://user:pass@geocities.com/path/kid/?asdf=1234#frag
 ```   
-###url.parent();
+### url.parent();
 Get the parent URI of the current URI. (This property is read-only).
 ```javascript
       url.parent();  // returns a new uri object with the uri
                      // https://user:pass@subdomain.asdf.com/path/
 ```   
 
-###url.password([newPassword]);
+### url.password([newPassword]);
 Setter/getter for the password portion of the url.
 ```javascript
       url.password(); // returns 'pass'
       url.password("newpass"); // returns a new uri object with the uri
                             // https://user:newpass@subdomain.asdf.com/path/kid/?asdf=1234#frag
 ```   
-###url.extendedPath([string]);
+### url.extendedPath([string]);
 Setter/getter for the path, querystring and fragment portion of the url
 all at once.
 ```javascript
@@ -85,7 +85,7 @@ all at once.
 
 ```   
 
-###url.path([mixed]);
+### url.path([mixed]);
 Setter/getter for the path portion of the url.
 ```javascript
       url.path(); // returns '/path/kid'
@@ -100,7 +100,7 @@ Setter/getter for the path portion of the url.
     
 Note: changing the path will remove the querystring and hash, since they rarely make sense on a new path.
 
-###url.port([newPort]);
+### url.port([newPort]);
 Setter/getter for the port portion of the url.
 ```javascript
       url.port(); // returns 80
@@ -109,7 +109,7 @@ Setter/getter for the port portion of the url.
 ```   
 
 
-###url.protocol([newProtocol]);
+### url.protocol([newProtocol]);
 
 
 Setter/getter for the protocol portion of the url.
@@ -119,7 +119,7 @@ Setter/getter for the protocol portion of the url.
                                 // http://user:pass@subdomain.asdf.com/path/kid/?asdf=1234#frag
 ```   
 
-###url.query([mixed]);
+### url.query([mixed]);
 
 Setter/getter for the querystring using javascript objects.
 ```javascript
@@ -139,7 +139,7 @@ NOTE: an input object will overwrite an existing querystring where they have the
 NOTE: an input object will remove an existing name-value pair where they have the same names and the value in the input name-value pair is null.
 
 
-###url.queryString([newQueryString]);
+### url.queryString([newQueryString]);
 
 Setter/getter for the querystring using a plain string representation. This is lower-level than .query(), but allows complete control of the querystring.
 ```javascript
@@ -150,33 +150,33 @@ Setter/getter for the querystring using a plain string representation. This is l
     
 NOTE: no escaping/unescaping of applicable characters will occur. This must be done manually.
 
-###url.rawChild();
+### url.rawChild();
 
 This method is the same as url.child() but does not automatically url-encode
 any part of the input.
 
-###url.rawPath();
+### url.rawPath();
 This method is the same as url.path() but does not automatically url-encode
 any part of the path.
 
-###url.rawQuery();
+### url.rawQuery();
 This method is the same as url.query() but does not automatically url-encode
 any of the keys or values in an input object.
 
 
-###url.toJson();
+### url.toJson();
 Returns the json representation of the uri object, which is simply the uri as a string. The output is exactly the same as .toString(). This method is read-only.
 ```javascript
   url.toJson(); // returns "https://user:pass@subdomain.asdf.com/path/kid/?asdf=1234#frag"
 ```   
 
-###url.toString();
+### url.toString();
 Returns the string representation of the uri object, which is simply the uri as a string. This method is read-only.
 ```javascript
       url.toString(); // returns "https://user:pass@subdomain.asdf.com/path/kid/?asdf=1234#frag"
 ```   
 
-###url.username([newUsername])
+### url.username([newUsername])
 Setter/getter for the username portion of the url.
 ```javascript
       url.username(); // returns 'user'
@@ -184,7 +184,7 @@ Setter/getter for the username portion of the url.
                                // uri https://newuser:pass@subdomain.asdf.com/path/kid/?asdf=1234#frag
 ```
 
-##Installation:
+## Installation:
 ### node.js:
 `npm install urlgrey --save`
 
@@ -196,24 +196,24 @@ Lots of options:
 * use [browserify](http://browserify.org/) and include this like any other node package.
 
 
-##Contributing:
-###Testing:
-####Run the node tests:
+## Contributing:
+### Testing:
+#### Run the node tests:
 * `make test`
 
-####Run the browser file:// tests:
+#### Run the browser file:// tests:
 * `make browser-build`
 * ...then open test.html in a browser
 
-####Run the browser tests on a real server:
+#### Run the browser tests on a real server:
 * `make browser-build`
 * `python -m SimpleHTTPServer 9999`
 * ...then open http://localhost://9999/test.html in a browser
 
-###Building before committing
+### Building before committing
 * `make precommit`
 
-###Running node tests with a coverage report
+### Running node tests with a coverage report
 * `make test-cov`
 
 
